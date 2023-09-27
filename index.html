@@ -15,7 +15,7 @@
 
 
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-fixed position-sticky navbar-dark" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-fixed position-fixed navbar-dark" id="navbar" style="width: 100%; z-index: 1000;">
         <div class="container-fluid">
             <a class="navbar-brand " id="navbar-header" href="/index.html">
                 <span style="color: var(--highlight-ro)">Person</span> Ryan
@@ -40,7 +40,7 @@
     </nav>
     <!---->
 
-    <!-- Introdoction Code Replica -->
+    <!-- Introdoction Header -->
     <div class="container-fluid parallax" style="background-image: url('./styles/imgs/main/header.png');">
         <div class="row">
             <div class="col-lg-2">
@@ -49,9 +49,11 @@
             <div class="col-lg-8">
                 <div class="div" style="margin: 0 auto;">
                     <img class="img-fluid" src="./styles/imgs/main/name/person-object.svg" style="margin-top: 200px; margin-left: 20px; width: 40%;" data-aos="fade-right" data-delay="10" data-aos-duration="1000">
-                <img class="img-fluid mt-3" src="./styles/imgs/main/name/setName.svg" style="width: 70%; margin-left: 20px;" data-aos="fade-up" data-delay="300" data-aos-duration="1000">
-                <img class="img-fluid mt-3" src="./styles/imgs/main/name/setCareer.svg" style="width: 90%; margin-left: 20px;" data-aos="fade-up" data-delay="4000" data-aos-duration="1500">
-                <img class="img-fluid mt-3" src="./styles/imgs/main/name/setPassion.svg" style="width: 90%; margin-bottom: 100px; margin-left: 20px;" data-aos="fade-up" data-delay="4000" data-aos-duration="2000">
+                <img class="img-fluid mt-2" src="./styles/imgs/main/name/setFName.svg" style="width: 70%; margin-left: 20px;" data-aos="fade-up" data-delay="300" data-aos-duration="1000">
+                <img class="img-fluid mt-2" src="./styles/imgs/main/name/setLName.svg" style="width: 80%; margin-left: 20px;" data-aos="fade-up" data-delay="300" data-aos-duration="1000">
+                <img class="img-fluid mt-1" src="./styles/imgs/main/name/setCareer.svg" style="width: 90%; margin-left: 20px;" data-aos="fade-up" data-delay="4000" data-aos-duration="1500">
+                <img class="img-fluid mt-2" src="./styles/imgs/main/name/setPassion.svg" style="width: 90%; margin-bottom: 100px; margin-left: 20px;" data-aos="fade-up" data-delay="4000" data-aos-duration="2000">
+                
                 </div>
                 
             </div>
@@ -65,7 +67,8 @@
     <div class="container-fluid" id="about-me">
         <div class="row">
             <div class="col-lg-12">
-                <h2>cout <span class="code-blue"><< "Hello, World!"</span>;</h2>
+                <h6 class="text-white" style="position: relative; top: 10px; font-size: 10px;">cout <span class="code-blue"><< "Hello, World!" << endl</span>;</h6>
+                <h2 class="code-ro" data-aos="fade-right">Hello, World!</h2>
             </div>
         </div>
         <div class="row">
@@ -75,21 +78,130 @@
                     Curabitur gravida arcu ac tortor dignissim. Ut pharetra sit amet aliquam id diam maecenas ultricies. <br><br>Integer enim neque volutpat ac tincidunt. Porta nibh venenatis cras sed felis. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Et ultrices neque ornare aenean. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Odio morbi quis commodo odio. Congue mauris rhoncus aenean vel elit scelerisque. Et odio pellentesque diam volutpat. Odio euismod lacinia at quis risus sed. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Magna sit amet purus gravida quis blandit turpis cursus.</p>
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid" src="./styles/imgs/main/me.png" id="headshot-img">
-                <img class="img-fluid" src="./styles/imgs/main/signature.svg" id="signature-img">
+                <img class="img-fluid" src="./styles/imgs/main/me.png" id="headshot-img" data-aos="fade-left">
+                <img class="img-fluid" src="./styles/imgs/main/signature.svg" id="signature-img" data-aos="fade-up" data-delay="400">
             </div>
         </div>
     </div>
 
-    <div class="container-fluid parallax-small" style="background-image: url('./styles/imgs/main/header.png');"></div>
+    <!-- Skills Header -->
+    <div class="container-fluid parallax-small" style="background-image: url('./styles/imgs/main/header.png'); padding: 70px;">
+        
+        <h6 class="text-white" style="position: relative; top: 25px; left: 15px; font-size: 10px;">cout <span class="code-blue"><< "Skills" << endl</span>;</h6>
+        <h1 class="text-white" style="font-size: 100px;" data-aos="fade-right">Skills</h1>
+    </div>
 
+    <!-- Skills Div -->
     <div class="container-fluid sect">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="text-white">skillSet.<span class="code-blue">printSkills</span><span class="code-ro">()</span>;</h2>
             </div>
         </div>
+        <!-- Skills Cards -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mt-5" data-aos="fade-right">
+                    <div class="card-body">
+                        <h6 class="card-header">Technical</h6>
+                        <div class="row card-list">
+                            <div class="col">
+                                <ul>
+                                    <li class="code-blue mb-2" id="technical1">C++</li>
+                                    <li class="code-blue mb-2" id="technical2">Java</li>
+                                    <li class="code-blue mb-2" id="technical3">Python</li>
+                                    <li class="mb-2" id="technical4">Lua</li>
+                                    <li class="mb-2" id="technical5">SQL</li>
+                                    <li class="mb-2" id="technical6">Databases</li>
+                                    <li class="mb-2" id="technical7">Networks</li>
+                                    <li class="code-blue mb-2" id="technical8">PC Repair</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li class=" code-blue mb-2" id="technical9">HTML</li>
+                                    <li class="code-blue mb-2" id="technical10">CSS</li>
+                                    <li class="code-blue mb-2" id="technical11">Bootstrap</li>
+                                    <li class="mb-2" id="technical12">JavaScript</li>
+                                    <li class="mb-2" id="technical13">JQuery</li>
+                                    <li class="code-blue mb-2" id="technical14">Hardware Troubleshooting</li>
+                                    <li class="code-blue mb-2" id="technical15">IT Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mt-5" data-aos="fade-right">
+                    <div class="card-body">
+                        <h6 class="card-header">Production</h6>
+                        <div class="row card-list">
+                            <div class="col">
+                                <ul>
+                                    <li class="code-blue mb-2" id="production1">Photoshop</li>
+                                    <li class="mb-2" id="production2">After Effects</li>
+                                    <li class="code-blue mb-2" id="production3">Premiere Pro</li>
+                                    <li class="code-blue mb-2" id="production4">Office 365</li>
+                                    <li class="code-blue mb-2" id="production5">Google Apps</li>
+                                    <li class="mb-2" id="production6">Zoom</li>
+                                    <li class="mb-2" id="production7">Skype</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li class="mb-2" id="production8">Networking</li>
+                                    <li class="mb-2" id="production9">Liveserver</li>
+                                    <li class="code-blue mb-2" id="production10">GFX Design</li>
+                                    <li class="code-blue mb-2" id="production11">Editing</li>
+                                    <li class="mb-2" id="production12">Scripting</li>
+                                    <li class="code-blue mb-2" id="production13">Writing</li>
+                                    <li class="mb-2" id="production14">Systems Analysis and Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mt-5" data-aos="fade-right">
+                    <div class="card-body">
+                        <h6 class="card-header">Interpersonal</h6>
+                        <div class="row card-list">
+                            <div class="col">
+                                <ul>
+                                    <li class="code-blue mb-2" id="interpersonal1">Leadership</li>
+                                    <li class="code-blue mb-2" id="interpersonal2">Team Management</li>
+                                    <li class="mb-2" id="interpersonal3">Staffing</li>
+                                    <li class="mb-2" id="interpersonal4">Team Sceduling</li>
+                                    <li class="mb-2" id="interpersonal5">Schedule Coordination</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li class="code-blue mb-2" id="interpersonal6">Communication</li>
+                                    <li class="code-blue mb-2" id="interpersonal7">Teamwork</li>
+                                    <li class="mb-2" id="interpersonal8">Event Management</li>
+                                    <li class="code-blue mb-2" id="interpersonal9">Event Planning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <div class="mt-5 footer">
+        <div class="col">
+            <h3>Socials</h3>
+        </div>
+        <div class="col">
+            <h3></h3>
+        </div>
+    </div>
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>

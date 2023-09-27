@@ -16,6 +16,18 @@ body {
     background-color: var(--mid);
 }
 
+ul {
+    list-style-image: url("./imgs/ui/list-arrow.svg");
+    color: white;
+}
+
+.footer {
+    background-color: var(--dark);
+    border-top: 3px var(--light) solid;
+    color: white;
+    padding: 100px;
+    min-width: 100%;
+}
 /*
     NAV STYLES
 */
@@ -60,9 +72,39 @@ body {
     height: 103%; 
 }
 
+/* CARD STYLES */
+.card {
+    background-color: var(--mid);
+    border: 2px var(--light) solid !important;
+    margin-top: 80px !important;
+    min-height: 350px;
+}
+
+.card-header {
+    background-color: var(--mid);
+    color: #8d6a1f;
+    border-right: 2px var(--light) solid !important;
+    border-left: 2px var(--light) solid !important;
+    border-top: 3px #e37d66 solid !important;
+    border-bottom: 4px #20242c solid !important;
+    position: relative;
+    width: 50%;
+    top: -57px;
+    left: -10px;
+}
+
+.card-list {
+    color: white;
+    position: relative;
+    top: -20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MISC STYLES */
+
 .parallax {  
     /* Set a specific height */
-    min-height: 700px;
+    min-height: 600px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
