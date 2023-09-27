@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap');
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+*/
+
+:root {
+    --light: #454b54;
+    --mid: #0d1117;
+    --dark: #010409;
+    --blue: #c6a8ff;
+    --highlight-ro: #8d6a1f;
+}
+
+body {
+    background-color: var(--mid);
+}
+
+/*
+    NAV STYLES
+*/
+
+.navbar-dark {
+    background-color: var(--dark);
+    border: 2px var(--light) solid;
+    /*height: 50px;*/
+}
+
+#collapsibleNavbar {
+    background-color: var(--dark);
+    border: 2px var(--light) solid;
+    text-indent: 20px;
+}
+
+
+.nav-link {
+    color: #7e8084;
+    border-left: 2px var(--light) solid;
+    border-right: 2px var(--light) solid;
+    height: 103%;
+}
+
+.nav-link:hover {
+    color: #8d6a1f !important;
+}
+
+.nav-link:focus {
+    color: #8d6a1f !important;
+}
+
+.active {
+    background-color: var(--mid) !important;
+    color: #8d6a1f !important;
+    border: 0px;
+    border-right: 2px var(--light) solid !important;
+    border-left: 2px var(--light) solid !important;
+    border-top: 4px #e37d66 solid !important;
+    border-bottom: 4px #20242c solid !important;
+    z-index: 99;
+    height: 103%; 
+}
+
+.parallax {  
+    /* Set a specific height */
+    min-height: 700px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-small {  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* COLOR STYLES */
+  .sect {
+    background-color: var(--dark);
+    border-top: 3px var(--light) solid;
+    border-bottom: 3px var(--light) solid;
+    padding: 30px;
+  }
+
+  .code-blue {
+    color: var(--blue) !important;
+  }
+
+  .code-ro {
+    color: var(--highlight-ro) !important;
+  }

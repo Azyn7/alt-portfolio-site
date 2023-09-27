@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1000px) {
+    .navbar-dark {
+        height: 50px;
+    }
+
+    #collapsibleNavbar {
+        border: 0px;
+    }
+
+    #about-me h2 {
+        font-size: 30px !important;
+    }
+    #signature-img {
+        width: 40% !important;
+        height: auto;
+        margin: 0px !important;
+        margin-left: 110px !important;
+        position: relative;
+    }
+
+}

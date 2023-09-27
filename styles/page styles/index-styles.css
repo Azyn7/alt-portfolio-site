@@ -1,0 +1,32 @@
+/* About Me Styles */
+#about-me {
+    background-color: var(--dark);
+    border-top: 3px var(--light) solid;
+    border-bottom: 3px var(--light) solid;
+    padding: 30px;
+}
+
+#about-me h2 {
+    font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+#about-me p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+#headshot-img {
+    width: 50%; 
+    height: auto;
+    margin-left: 75px;
+}
+
+#signature-img {
+    width: 80%;
+    height: auto;
+    margin-left: 35px;
+}
