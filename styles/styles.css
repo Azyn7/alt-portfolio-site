@@ -9,7 +9,7 @@
     --mid: #0d1117;
     --dark: #010409;
     --blue: #c6a8ff;
-    --highlight-ro: #8d6a1f;
+    --highlight-ro: #e0b82f;
 }
 
 body {
@@ -53,16 +53,16 @@ ul {
 }
 
 .nav-link:hover {
-    color: #8d6a1f !important;
+    color: var(--highlight-ro) !important;
 }
 
 .nav-link:focus {
-    color: #8d6a1f !important;
+    color: var(--highlight-ro) !important;
 }
 
 .active {
     background-color: var(--mid) !important;
-    color: #8d6a1f !important;
+    color: var(--highlight-ro) !important;
     border: 0px;
     border-right: 2px var(--light) solid !important;
     border-left: 2px var(--light) solid !important;
@@ -82,7 +82,7 @@ ul {
 
 .card-header {
     background-color: var(--mid);
-    color: #8d6a1f;
+    color: var(--highlight-ro);
     border-right: 2px var(--light) solid !important;
     border-left: 2px var(--light) solid !important;
     border-top: 3px #e37d66 solid !important;
